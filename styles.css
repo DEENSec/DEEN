@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #000000 ;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+   /* Disable horizontal scrolling */
+  /* Disable vertical scrolling */
+}
+
+/* Styling for all h1 elements */
+h1 {
+  font-weight: bold; /* Makes the text bold */
+  font-family: 'Arial', sans-serif; /* Example: Change the font to Arial */
+  color: #ff6700; /* Example: Change the color to orange */
+  text-transform: uppercase; /* Makes the text uppercase */
+  letter-spacing: 2px; /* Add some space between letters */
+  font-size: 36px; /* Set the font size to 36px */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+}
+
+/* Styling for all h2 elements */
+h2 {
+  font-weight: normal; /* Makes the text bold */
+  font-family: 'Verdana', sans-serif; /* Example: Change the font to Verdana */
+  color: #ff6700; /* Example: Dark gray color */
+  font-size: 28px; /* Set the font size to 28px */
+  text-align: center; /* Center-align the text */
+}
+
+
+
+
+/* Navigation Bar Styles */
+.nav-bar {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Full width of the page */
+  height: 50px; /* Set a fixed height for the header */
+  background-color: #ffffff; /* Background color */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the items */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 0 20px; /* Add horizontal padding for spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9); /* Optional: Add shadow for design */
+
+}
+
+/* Navigation Button Styles */
+.nav-button {
+  margin-right: 2.5px; /* Add space between buttons */
+  padding: 15px 20px; /* Adjust button size */
+  color: #333; /* Default text color (black) */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Font size */
+  text-transform: uppercase; /* Uppercase text */
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  border-radius: 0px; /* No border radius */
+  transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+/* Button Click (active) Effect */
+.nav-button:active {
+  color: #ff6700; /* Change text color to orange when clicked */
+}
+
+/* Button Hover Effect */
+.nav-button:hover {
+  color: #ff6700; /* Change text color to orange on hover */
+}
+
+/* About Me */
+.about-me {
+  
+  text-align: center;
+  padding: 250px;
+  flex: 1;
+}
+
+/* About Me */
+.animated-text {
+  
+  text-align: center;
+  padding: 140px;
+  flex: 1;
+}
+
+
+
+
+.another-about {
+  text-align: center;
+  padding: 40px;
+  flex: 1;
+}
+
+.background-image {
+  transform: translate(-50%, -50%);
+  position: absolute; /* Allows precise positioning */
+  top: 100%; /* Move image lower */
+  left: 50%; /* Centers horizontally */
+  width: 80vw; /* 80% of the viewport width */
+  height: 80vw; /* Maintain a square aspect ratio */
+  max-width: 2000px; /* Optional: maximum size constraint */
+  max-height: 800px; /* Optional: maximum size constraint */
+  background-image: url('C:/Users/Lap_Deen/Desktop/best version_final_web/assets/3rd.jpg');
+  background-size: contain; /* Fit image within the container without cropping */
+  background-repeat: no-repeat; /* Avoid repetition */
+  background-position: center top; /* Center the image */
+  opacity: 0.1; /* Semi-transparent */
+  z-index: 0; /* Ensure it doesn't overlap other elements */
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 400px; /*150*/
+  height: 400px;
+  border: 5px solid #ff6700; /*5*/ /*orange color ff6700*/
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* Resources */
+.resources {
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.articles {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* Ensure 2 items per row */
+}
+
+.article-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.article-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Uniform thumbnail size */
+}
+
+@media (max-width: 600px) {
+  .articles {
+    grid-template-columns: 1fr; /* Switch to 1 article per row on smaller screens */
+  }
+}
+
+.read-more {
+  display: inline-block;
+  color: #fff;
+  background-color: #ff6700;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #e65a00;
+}
+
+/* Animations 
+@keyframes fadeBackground {
+  0% {
+    background-image: url('https://img.freepik.com/premium-photo/industrial-precision-factory-with-cnc-automation-pallet-systems-arc-welding-fpi-cleaning_967273-61278.jpg?size=626&ext=jpg');
+  }
+  50% {
+    background-image: url('https://media.istockphoto.com/id/877208986/photo/electrical-substation.jpg?s=612x612&w=0&k=20&c=qx5kSuJKPFqEEhSeMb8cas6-A3Y1hWb1-3s_gh6OFEE=');
+  }
+  100% {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.LGQ0Eja_NrJ-XswAs-tqEQHaEo%26pid%3DApi&f=1&ipt=475d749650aaa6810d185759ce4b64ce16f9904757bec66d548a8535f516c4e6&ipo=images');
+  }
+}
+*/
+
+
+/* Social Media Section */
+.social-media {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+  padding: 8px 20px; /* Padding for the container 8px 20px  */
+  background-color: #ffffff; /* White background for the dock */
+  border-radius: 20px; /* Rounded corners for the dock shape */
+  border: 4px solid transparent; /* Initially remove the border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  position: relative; /* To position the pseudo-element for the border */
+  max-width: 80%; /* Limit width to 80% of the parent container */
+  margin-left: auto;
+  margin-right: auto; /* Center the dock */
+}
+
+/* Metal Effect Border */
+.social-media::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(45deg, #ff6700, #ff9d1b, #ff6700); /* Orange gradient for metal effect */
+  border-radius: 30px; /* Rounded corners for the border */
+  z-index: -1; /* Place behind the main container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow around the border */
+  background-size: 200% 200%; /* Make the gradient move */
+  animation: metallicBorder 3s infinite linear; /* Animation to create metallic shine effect */
+}
+
+/* Animation for the metallic border shine */
+@keyframes metallicBorder {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Social Media Section */
+.social-media {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+  padding: 10px 20px; /* Padding for the container */
+  background-color: #ffffff; /* White background for the dock */
+  border-radius: 20px; /* Rounded corners for the dock shape */
+  max-width: 80%; /* Limit width to 80% of the parent container */
+  margin-left: auto;
+  margin-right: auto; /* Center the dock */
+}
+
+/* Social Media Icons */
+.social-icon img {
+  width: 40px; /* Icon size */
+  height: 40px;
+  border-radius: 50%; /* Circular icons */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Icon animation */
+}
+
+/* Hover Effects for Icons */
+.social-icon img:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+  opacity: 0.8; /* Slight fade on hover */
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Remove underline and adjust spacing for social media links */
+.social-icon {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  background-color: #fff; /* White background for hover area */
+  border-radius: 50%; /* Circle hover effect */
+  padding: 5px; /* Spacing inside the link */
+}
+
+.social-icon:hover {
+  background-color: #ff6700; /* Orange hover background for link */
+}
+
+
