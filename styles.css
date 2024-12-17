@@ -110,7 +110,7 @@ h2 {
   height: 80vw; /* Maintain a square aspect ratio */
   max-width: 2000px; /* Optional: maximum size constraint */
   max-height: 800px; /* Optional: maximum size constraint */
-  background-image: url('C:/Users/Lap_Deen/Desktop/best version_final_web/assets/3rd.jpg');
+  background-image: url('https://github.com/DEENSec/DEEN/tree/main/assets/3rd.jpg');
   background-size: contain; /* Fit image within the container without cropping */
   background-repeat: no-repeat; /* Avoid repetition */
   background-position: center top; /* Center the image */
